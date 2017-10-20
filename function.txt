@@ -1,9 +1,0 @@
-CREATE OR REPLACE FUNCTION CONTAR ()
-RETURNS integer AS $CONTEO$
-declare
-	CONTEO integer;
-BEGIN
-   SELECT count(*) into CONTEO FROM persona;
-   RETURN CONTEO;
-END;
-$CONTEO$ LANGUAGE plpgsql;
