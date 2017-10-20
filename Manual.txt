@@ -32,8 +32,6 @@ Crear tabla:            "tablename":"<name of table>", "attributes":"<attribute 
 
 Crear índice:           "indexname":"<name of index>", "tablename":"<name of table>", columns:"<column(s) separated by commas>"
 
-Crear función:
-
 Modificar nombre tabla: "tablename":"<name of table>", "newname":"<new name of table>"
 
 Modificar nombre col:   "tablename":"<name of table>", "oldname":""<name of column>", "newname":"<new name of column>"
