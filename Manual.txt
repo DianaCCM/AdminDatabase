@@ -1,0 +1,69 @@
+  _    _          _
+ | |  | |        | |
+ | |__| |   ___  | |  _ __
+ |  __  |  / _ \ | | | '_ \
+ | |  | | |  __/ | | | |_) |
+ |_|  |_|  \___| |_| | .__/
+                     | |
+                     |_|
+
+Menú principal:         show menu
+Menú DDL:               show ddl
+Menú DML:               show dml
+Crear tabla:            create t
+Crear índice:           create i
+Crear función:          create f
+Modificar tabla:        Alter t
+Modificar índice:       Alter i
+Modificar función:      Alter f
+Borrar tabla:           drop t
+Borrar índice:          drop i
+Borrar función:         drop f
+Insertar registro:      insert
+Seleccionar datos:      select
+Actualizar datos:       update
+Eliminar datos:         del
+Salir:                  exit
+
+Estructuras predefinidas:
+Crear tabla:            "tablename":"<name of table>", "attributes":"<attribute separated by commas>",
+                        "foreignKeyMyColumns":"<my columns separated by commas>", "foreignKeyTable":"<name of other table>",
+                        "foreignKeyColumns":"<columns separated by commas>"
+
+Crear índice:           "indexname":"<name of index>", "tablename":"<name of table>", columns:"<column(s) separated by commas>"
+
+Crear función:
+
+Modificar nombre tabla: "tablename":"<name of table>", "newname":"<new name of table>"
+
+Modificar nombre col:   "tablename":"<name of table>", "oldname":""<name of column>", "newname":"<new name of column>"
+
+Agregar columna:        "tablename":"<name of table>", "columntoadd":"<name of new column>", "type":"<type>"
+
+Borrar columna:         "tablename":"<name of table>", "columntodrop":"<name of column>"
+
+Modificar índice:       "indexname":"<name of index>", "newname":"<new name of index>"
+
+Modificar función:      "namefunction":"<name of function>", "newname":"<new name of function>"
+
+Borrar tabla:           "tablename":"<name of table>"
+
+Borrar índice:          "indexname":"<name of index>"
+
+Borrar función:         "namefunction":"<name of function>"
+
+Insertar registro:      "tablename":"<name of table>", "elements":"<atrributes separated by commas>", "values":"<values separated by commas>"
+
+Seleccionar datos:      "tablename":"<name of table>", "elements":"<atrributes separated by commas>", "where":"<condition(s)>"
+
+Actualizar datos:       "tablename":"<name of table>", "newvalue":"<atrribute = new value>", "condition":"<condition>"
+
+Eliminar un dato:       "tablename":"<name of table>", "condition":"<condition>"
+
+Eliminar datos:         "tablename":"<name of table>"
+
+
+Nota:
+A través del menú principal puede realizar diversas acciones de forma asistida.
+Si desea utilizar línea de comandos utilice las estructuras predefinidas.
+
