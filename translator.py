@@ -6,8 +6,8 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 # ------------------------------------------------------ CONNECTION DATABASE ----------------------------------------- #
-converPage = open('/Users/DianaCM/OneDrive/FirstProject/coverPage.txt')
-read = converPage.read()
+coverPage = open('/Users/DianaCM/OneDrive/FirstProject/coverPage.txt')
+read = coverPage.read()
 print(read)
 print('Administrador de base de datos')
 
@@ -17,7 +17,6 @@ database = input('Base de datos: ',)
 password = getpass.getpass('Contraseña: ')
 
 try:
- #   connection = "host='192.168.0.54' dbname='postgres' user='sysadmin' password='admin'"
 #    connection = "host='localhost' dbname='postgres' user='postgres' password='admin'"
     connection = "host='"+host+"' dbname='"+database+"' user='"+user+"' password='"+password+"'"
     conn = psycopg2.connect(connection)
@@ -1018,14 +1017,10 @@ def executing(instruction):
     except KeyboardInterrupt:
         print("BYE")
 
-
-#enter = input("Presione enter para continuar")
-#executing(enter)
-
 #CREATE_INDEX = "indexname":"testIndex","tablename":"Test","columns":"ID, Name"
 #DROP_TABLE = "tablename":"testing"
 #CREATE_TABLE_FK = {"tablename":"pruebita", "attributes":"id int PRIMARY KEY, name varchar NOT NULL, sex char(1)","foreignKeyMyColumns":"","foreignKeyTable":"","foreignKeyColumns":""}
-CREATE_TABLE = '"tablename":"prueba", "attributes":"id int PRIMARY KEY, name varchar NOT NULL, sex char(1)","foreignKeyMyColumns":"id","foreignKeyTable":"pruebita","foreignKeyColumns":"id"'
+#CREATE_TABLE = '"tablename":"prueba", "attributes":"id int PRIMARY KEY, name varchar NOT NULL, sex char(1)","foreignKeyMyColumns":"id","foreignKeyTable":"pruebita","foreignKeyColumns":"id"'
 #argsDictionary = argsFormatted(CREATE_TABLE )
 #createTableByCommand(**argsDictionary)
 
